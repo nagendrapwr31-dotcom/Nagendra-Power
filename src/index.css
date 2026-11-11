@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #05161A;
+    color: #F3F4F6;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom glow and color helper utilities */
+.bg-deriv-dark {
+  background-color: #05161A;
+}
+
+.bg-deriv-card {
+  background-color: #0A2428;
+}
+
+.bg-deriv-input {
+  background-color: #0E2A2E;
+}
+
+.border-deriv-cyan {
+  border-color: rgba(0, 229, 255, 0.2);
+}
+
+.border-deriv-cyan-active {
+  border-color: #00E5FF;
+}
+
+.text-deriv-cyan {
+  color: #00E5FF;
+}
+
+.shadow-cyan-glow {
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.35);
+}
+
+.shadow-cyan-sm {
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.25);
+}
+
+.shadow-yellow-glow {
+  box-shadow: 0 0 20px rgba(250, 204, 21, 0.25);
+}
+
+/* Gradient button from screenshots: cyan #00E5FF -> purple #A855F7 -> orange #F59E0B */
+.btn-nexora-gradient {
+  background: linear-gradient(90deg, #00E5FF 0%, #A855F7 52%, #F59E0B 100%);
+  transition: all 0.2s ease;
+}
+
+.btn-nexora-gradient:hover {
+  opacity: 0.95;
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.45);
+}
+
+.btn-premium-gradient {
+  background: linear-gradient(90deg, #F59E0B 0%, #A855F7 50%, #10B981 100%);
+}
+
+.font-mono-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #05161A;
+}
+::-webkit-scrollbar-thumb {
+  background: #0E2A2E;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 229, 255, 0.4);
+}
